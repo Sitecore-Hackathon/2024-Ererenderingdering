@@ -51,7 +51,7 @@ No additional configuration is required.
 
 1. Open Sitecore Launchpad
 2. Click on `Code` Application. It should open new page with Visual Studio Code under `https://cm.vscodeeditor.localhost/sitecore/admin/vscodeeditorframe.aspx` URL
-3. Enjoy editing your code using Visual Studio Code. It has all the features you love in VS Code.
+3. Enjoy browsing your code using Visual Studio Code. It has all the features you love in VS Code.
 
 ## Comments
 Please don't use it in the production. We cut the cornres to make it work for submission. It is not secure.
