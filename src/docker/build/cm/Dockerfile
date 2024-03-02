@@ -60,3 +60,5 @@ RUN C:\module\tools\Initialize-Content.ps1 -TargetPath C:\inetpub\wwwroot; `
 # Copy solution website files
 COPY --from=solution /artifacts/sitecore/ ./
 COPY readme.md *.config*  c:\inetpub\wwwroot\App_Config\Include\
+
+COPY .\tools C:\tools
