@@ -63,6 +63,13 @@ COPY readme.md *.config*  c:\inetpub\wwwroot\App_Config\Include\
 
 COPY .\tools C:\tools
 # Copy role transforms
-COPY .\transforms\ C:\tools\transforms\
+COPY .\transforms c:\inetpub\wwwroot
 
-RUN C:\tools\scripts\Invoke-XdtTransform.ps1 -Path C:\inetpub\wwwroot\ -XdtPath C:\tools\transforms\
+#Get content of web.config.xdt and output to console
+RUN Write-Host "Web.config.xdt" ; Get-Content C:\inetpub\wwwroot\Web.config.xdt
+
+# Perform role transforms
+RUN C:\tools\scripts\Invoke-XdtTransform.ps1 -Path 'C:\inetpub\wwwroot\Web.config' -XdtPath 'C:\inetpub\wwwroot\Web.config.xdt'
+
+#Get content of web.config and output to console
+RUN Write-Host "Web.config before transform" ; Get-Content C:\inetpub\wwwroot\Web.config
