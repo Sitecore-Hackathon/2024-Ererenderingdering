@@ -62,3 +62,7 @@ COPY --from=solution /artifacts/sitecore/ ./
 COPY readme.md *.config*  c:\inetpub\wwwroot\App_Config\Include\
 
 COPY .\tools C:\tools
+# Copy role transforms
+COPY .\transforms\ C:\tools\transforms\
+
+RUN C:\tools\scripts\Invoke-XdtTransform.ps1 -Path C:\inetpub\wwwroot\ -XdtPath C:\tools\transforms\
