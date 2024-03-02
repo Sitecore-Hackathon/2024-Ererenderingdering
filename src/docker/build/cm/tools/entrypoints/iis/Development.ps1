@@ -43,7 +43,7 @@ if ($useWatchDirectory)
 
     # Start code server
     Start-Job -ScriptBlock { 
-        & "code-server.ps1" --auth none 
+        & "code-server.ps1" --auth none --host 0.0.0.0
     } | Out-Null
 
     Get-Job
