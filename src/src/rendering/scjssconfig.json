@@ -1,0 +1,9 @@
+{
+  "sitecore": {
+    "instancePath": "..\\..\\docker\\deploy\\platform\\",
+    "apiKey": "29529541-0A4A-43EC-8AFA-83E1D7AFEF34",
+    "deploySecret": "2F205E215B9C4B6382639A553EA802DE",
+    "deployUrl": "https://cm.vscodeeditor.localhost/sitecore/api/jss/import",
+    "layoutServiceHost": "https://cm.vscodeeditor.localhost"
+  }
+}
