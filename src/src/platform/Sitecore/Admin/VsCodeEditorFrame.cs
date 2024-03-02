@@ -5,6 +5,6 @@ namespace VsCodeEditor.Platform.Sitecore.Admin
 {
     public class VsCodeEditorFrame : System.Web.UI.Page
     {
-        public string FrameSrc { get; set; } = "https://google.com";
+        public string FrameSrc { get; set; } = "/sitecore/shell/code";
     }
 }
