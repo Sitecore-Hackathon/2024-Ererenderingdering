@@ -4,20 +4,9 @@
     "items": {
         "includes": [
             {
-                "name": "layouts",
-                "path": "/sitecore/layout/Layouts/Project/vscodeeditor"
-            },
-            {
-                "name": "placeholders",
-                "path": "/sitecore/layout/Placeholder Settings/Project/vscodeeditor"
-            },
-            {
-                "name": "renderings",
-                "path": "/sitecore/layout/Renderings/Project/vscodeeditor"
-            },
-            {
-                "name": "templates",
-                "path": "/sitecore/templates/Project/vscodeeditor"
+				"database": "core",
+                "name": "launchpad",
+                "path": "/sitecore/client/Applications/Launchpad/PageSettings/Buttons/Tools/Code"
             }
         ]
     }
