@@ -16,6 +16,35 @@ SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPref
 
 WORKDIR C:\inetpub\wwwroot
 
+# Install Chocolatey
+RUN Set-ExecutionPolicy Bypass -Scope Process -Force; `
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
+    iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'));
+
+# Install Python
+RUN choco install python --version 3.11.0 --yes
+
+# Test Python installation
+RUN python --version
+
+# Install Node.js
+RUN choco install nodejs --version 18.18.2 --yes
+
+# Test Node.js installation
+RUN node --version
+
+# Install Git
+RUN choco install git --version 2.39.2 --yes
+
+# Append additional git directories to PATH
+#ENV ADD_PATH=";C:\Program Files\Git\usr\bin;C:\Program Files\Git\bin"
+RUN setx /M PATH \"$Env:PATH;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\bin\"
+
+# Install Visual Studio Build Tools
+RUN choco install visualstudio2019buildtools visualstudio2019-workload-vctools windows-sdk-10-version-1809-all --yes
+
+RUN npm install --global code-server --unsafe-perm
+
 # Copy developer tools and entrypoint
 COPY --from=tools C:\tools C:\tools
 
