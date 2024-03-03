@@ -8,12 +8,12 @@ Best Module for XM/XP or XM Cloud
 
 ## Description
 
-Remember Sitecore File Editor? 
+Remember Sitecore File Explorer?
 ![File Explorer](./docs/images/FileExplorer.jpg)
 
-The link to this module disappeared in Sitecore 8.1. And there was no attention to this part of Sitecore. It becomes uglier over the latest browser updates. We want to make it better. We want to make it great. And what editor could be better than Visual Studio Code? We want to use it as a code editor for Sitecore on servers as well.
+The link to this module disappeared in Sitecore 8.1. And there was no attention to this part of Sitecore. It becomes uglier over the latest browser updates. We want to make it better. We want to make it more convenient. And what editor could be better than Visual Studio Code? We want to use it as a code editor for Sitecore on servers as well.
 
-The module allows to browse your code on your instanse using hosted Visual Studio Code.
+The module allows you to browse your code on your instanse using hosted Visual Studio Code.
 ![VS Code](./docs/images/VSCode.jpg)
 
 Implementaion relies on [VS Code Server](https://github.com/coder/code-server). It requires dependeincies to be installed on the server.
@@ -38,7 +38,7 @@ Editing is not supported, only viewing due to Windows containers nature.
 3. Run `./init.ps1 -InitEnv -Topology xm1` by Administrator to initialize the environment
    1. Set path to Sitecore license file
    2. Set Sitecore admin password
-4. Run `./up.ps1` to start the environment. Be patient, it downloads Docker images and install dependencies. It may take a while. You may think that it's stuck on `visualstudio2019-workload-vctools`, `visualstudio2019buildtools`, or `windows-sdk-10-version-1809-all` but it's not. It's just slow.
+4. Run `./up.ps1` to start the environment. Be patient, it downloads Docker images and install dependencies. It may take a while. You may think that it's stuck on `visualstudio2019-workload-vctools`, `visualstudio2019buildtools`, or `windows-sdk-10-version-1809-all`. But it's not. It's just slow.
 
 ### Configuration
 
