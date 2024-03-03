@@ -24,11 +24,8 @@ The initial intention was to use Sitecore as a proxy, but we didn't manage to co
 Editing is not supported, only viewing due to Windows containers nature.
 
 ## Video link
-⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
 
-⟹ [Replace this Video link](#video-link)
-
-
+[Sitecore Visual Studio Code](https://www.youtube.com/watch?v=0qAR1IuxYiQ)
 
 ## Pre-requisites and Dependencies
 
